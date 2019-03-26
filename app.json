@@ -1,0 +1,17 @@
+{
+  "pages":[
+    "pages/addPersion/addPersion",
+    "pages/index/index",
+    
+    "pages/persion/persion",
+    "pages/course/course",
+    
+    "pages/authorize/authorize"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "儿童编程",
+    "navigationBarTextStyle":"black"
+  }
+}

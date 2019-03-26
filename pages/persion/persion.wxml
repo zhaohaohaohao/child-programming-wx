@@ -1,0 +1,48 @@
+<!--pages/persion/persion.wxml-->
+<view class="header main">
+  <image class="avatar" src="/images/up.png"></image>
+  <view class='right-view'>
+    <view class='row'>
+      <view class="userText">姓名：</view>
+      <view class="nickname">赵赞峰</view>
+    </view>
+    <view class='row'>
+      <view class="userText">微信：</view>
+      <view class="nickname">Z2452764929</view>
+    </view>
+  </view>
+  <image class='to-edit-user' src='../../images/right-ioc.png'></image>
+</view>
+
+<view class="main" bindtap="toOrderList" data-totab="全部订单">
+  <view class='lineView'>
+    <view wx:for="{{textArr}}" class='orderView' bindtap="myOrderList" data-index='{{index}}' wx:key="{{index}}">
+      <image src='{{imageArr[index]}}' class='image' mode='aspectFit'></image>
+      <text class='text'>{{item}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="content" bindtap="toCoupon">
+  <image src="/images/click.png" class="sm-img"></image>
+  <text>课时查看</text>
+  <image src="/images/right-ioc.png" class="sm-img pull-right"></image>
+</view>
+<view class="content" bindtap="toVerification">
+  <image src="/images/click.png" class="sm-img"></image>
+  <text>课堂表现</text>
+  <image src="/images/right-ioc.png" class="sm-img pull-right"></image>
+</view>
+<view class="content" bindtap="toSeting">
+  <image src="/images/click.png" class="sm-img"></image>
+  <text>分享小程序</text>
+  <image src="/images/right-ioc.png" class="sm-img pull-right"></image>
+</view>
+<view class="content" bindtap="toSeting">
+  <image src="/images/click.png" class="sm-img"></image>
+  <text>意见反馈</text>
+  <image src="/images/right-ioc.png" class="sm-img pull-right"></image>
+</view>
+<view class='back-bac' bindtap="toSeting">
+  <text>退出</text>
+</view>

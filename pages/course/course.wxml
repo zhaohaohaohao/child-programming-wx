@@ -1,0 +1,60 @@
+<view class='page'>
+  <view>
+    <text class="title">春季班小学六年级数学勤思版</text>
+    <view class="dates">
+      <image class="image" src="../../images/time.png"></image>
+      <view class="date">周日晚上18：00-20：30</view>
+    </view>
+    <view class="dates">
+      <image class="image" src="../../images/location.png"></image>
+      <view class="date">学院路石家庄学院</view>
+    </view>
+    <view class="dates">
+      <image class="image" src="../../images/callender.png"></image>
+      <view class="date">2019-03-03 至 2019-05-01</view>
+    </view>
+    <view class="dates">
+      <image class="image" src="../../images/countCourse.png"></image>
+      <view class="date">50节</view>
+    </view>
+    <view class="dates">
+      <image class="image" src="../../images/price.png"></image>
+      <view class="price">1200</view>
+    </view>
+  </view>
+  <!-- 分割线 -->
+  <view class="divLine"></view>
+  <view class='teacher'>
+    <image class="item-teacher-image" src="../../images/teacher.png"></image>
+    <view class="item-teacherName">赵赞峰</view>
+  </view>
+
+  <!-- 课程简介 -->
+  <view class="bg-img">
+    <text class="introduction">课程简介</text>
+  </view>
+  <view class='course-content-style'>
+    <view class='course-content'>asjdkljasdklljsklaljdlaksljdkalsl啊啥的啥的hi撒的话傻傻的啥都会爱说大话大苏打爱说大话啊岁哦的啊速度欧赛哦的话爱上代售点哦啊速度华盛顿䖊赛道和啊速度和赛i的哈耸打碎的哈速度化的似乎赛道和啊速度和的撒谎的啊隧洞啊速度话哦是的Saudi哈随后jdklj</view>
+  </view>
+
+  <!-- 课程介绍图片 -->
+  <view class="bg-img">
+    <text class="introduction">宣传照片</text>
+  </view>
+  <image class='course-introduction-img' src='{{imglist}}' bindtap="previewImage"></image>
+</view>
+
+<view class='emty-view'></view>
+<view class='bottom-view'>
+  <view></view>
+  <view class='bottom-button'>
+    <image class='bottom-button-img' src='../../images/share.png'></image>
+  </view>
+  <view class='bottom-button'>
+    <image class='bottom-button-img' src='{{collect}}' bindtap="collect"></image>
+  </view>
+  <view class='bottom-button'>
+    <image class='bottom-button-img' src='../../images/enroll.png'></image>
+  </view>
+  <view></view>
+</view>

@@ -1,0 +1,141 @@
+<!--index.wxml-->
+<view class="page">
+  <view class="page-bottom" bindtap="tap_ch">
+    <view class="page-content">
+      <view class="wc">
+        <text>第一个item1</text>
+      </view>
+      <view class="wc">
+        <text>第二个item2</text>
+      </view>
+      <view class="wc">
+        <text>第三个item3</text>
+      </view>
+      <view class="wc">
+        <text>第四个item4</text>
+      </view>
+    </view>
+  </view>
+
+
+
+  <view class="container page-top {{open ? 'c-state1' : ''}}">
+    <scroll-view scroll-y="true" style="height:{{scrollYHeight}}px" bindscrolltoupper="upper" bindscrolltolower="lower">
+
+      <view class="top-select">
+        <view class='experience-lesson'>体验课</view>
+        <!-- <view class="choice-bar">
+          <view bindtap="opens" class="chioce-item" hover-class="click-once-opaque">{{start}}
+            <image class="icon-chioce" src="{{!isstart?openimg: offimg}}"></image>
+          </view>
+          <view class="sorting-list{{!isstart?' chioce-list-hide':' chioce-list-show'}}">
+            <view wx:for="{{slist}}" bindtap="onclicks" data-index="{{index}}" wx:key="{{id}}" class="sorting-item" hover-class="click-once">{{item.name}}</view>
+          </view>
+        </view> -->
+        <image catchtap='authorization' class='myself' src='../../images/myself.png'></image>
+      </view>
+
+      <!-- 搜索栏 -->
+      <view class="search-bar">
+        <input placeholder="搜索课程名称"></input>
+        <button>搜索</button>
+        <image bindtap="tap_ch" class="screening" src='../../images/screening.png'></image>
+      </view>
+      <!-- 首页大图 -->
+      <image class='home-img' src='../../images/home-img.png'></image>
+      <!-- 课程列表 -->
+      <view class='item-background'>
+        <block>
+          <navigator class="scroll-view-item" url="../course/course?stamp={{item.stamp}}">
+            <text class="item-title">春季班小学六年级数学勤思版</text>
+            <view class="item-dates">
+              <image class="item-image" src="../../images/time.png"></image>
+              <view class="item-date">周日晚上18：00-20：30</view>
+            </view>
+            <view class="item-locations">
+              <image class="item-image" src="../../images/location.png"></image>
+              <view class="item-location">学院路石家庄学院</view>
+            </view>
+            <view class="item-during">
+              <text class="item-during-date">2019-03-03 至 2019-05-01</text>
+              <text class="item-during-num">剩20</text>
+            </view>
+
+            <!-- 分割线 -->
+            <view class="divLine"></view>
+            <view class='teacher-price'>
+              <view class='teacher'>
+                <image class="item-teacher-image" src="../../images/teacher.png"></image>
+                <view class="item-teacherName">赵赞峰</view>
+              </view>
+              <text class='price'>￥1200</text>
+            </view>
+          </navigator>
+        </block>
+
+        <block>
+          <navigator class="scroll-view-item" url="../course/course?stamp={{item.stamp}}">
+            <text class="item-title">春季班小学六年级数学勤思版</text>
+            <view class="item-dates">
+              <image class="item-image" src="../../images/time.png"></image>
+              <view class="item-date">周日晚上18：00-20：30</view>
+            </view>
+            <view class="item-locations">
+              <image class="item-image" src="../../images/location.png"></image>
+              <view class="item-location">学院路石家庄学院</view>
+            </view>
+            <view class="item-during">
+              <text class="item-during-date">2019-03-03 至 2019-05-01</text>
+              <text class="item-during-num">剩20</text>
+            </view>
+
+            <!-- 分割线 -->
+            <view class="divLine"></view>
+            <view class='teacher-price'>
+              <view class='teacher'>
+                <image class="item-teacher-image" src="../../images/teacher.png"></image>
+                <view class="item-teacherName">赵赞峰</view>
+              </view>
+              <text class='price'>￥1200</text>
+            </view>
+          </navigator>
+        </block>
+        <block>
+          <navigator class="scroll-view-item" url="../issue/issue?stamp={{item.stamp}}">
+            <text class="item-title">春季班小学六年级数学勤思版</text>
+            <view class="item-dates">
+              <image class="item-image" src="../../images/time.png"></image>
+              <view class="item-date">周日晚上18：00-20：30</view>
+            </view>
+            <view class="item-locations">
+              <image class="item-image" src="../../images/location.png"></image>
+              <view class="item-location">学院路石家庄学院</view>
+            </view>
+            <view class="item-during">
+              <text class="item-during-date">2019-03-03 至 2019-05-01</text>
+              <text class="item-during-num">剩20</text>
+            </view>
+
+            <!-- 分割线 -->
+            <view class="divLine"></view>
+            <view class='teacher-price'>
+              <view class='teacher'>
+                <image class="item-teacher-image" src="../../images/teacher.png"></image>
+                <view class="item-teacherName">赵赞峰</view>
+              </view>
+              <text class='price'>￥1200</text>
+            </view>
+          </navigator>
+        </block>
+
+      </view>
+    </scroll-view>
+    <loading hidden="{{hidden}}">
+      加载中...
+    </loading>
+
+
+
+  </view>
+
+</view>
